@@ -25,13 +25,44 @@
     h5,
     h6,
     p {
-        line-height: 1.2em;
-        margin-top: 10px;
-        margin-bottom: 10px;
         font-weight: 300;
     }
 }
 
-.wrapper {
-    padding: 10px !important;
+hr {
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+    border-width: 0;
+    border-top: 1px solid #E1E1E1;
 }
+
+.wrapper {
+    padding: 10px 10px;
+}
+
+.fullScream {
+    height: 100vh;
+}
+.halfScream {
+    height: 50vh;
+}
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {}

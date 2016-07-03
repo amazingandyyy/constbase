@@ -44,8 +44,19 @@
 .shadowThis {
     box-shadow: 0 0 10px -1px rgba(0,0,0,0.3);
 }
-.centerContent {
+.centerContent, .verticalAlign {
     text-align: center !important;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+    div {
+        margin: auto;
+    }
 }
 .notBlockThis {
     display: inline;
@@ -56,4 +67,7 @@
 }
 .gray {
     background: #ddd;
+}
+.white {
+    color: white;
 }
