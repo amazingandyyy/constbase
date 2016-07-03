@@ -1,0 +1,59 @@
+@import "variables";
+.bold {
+    font-weight: 600 !important;
+}
+.BOLD {
+    font-weight: 900 !important;
+}
+.LIGHT {
+    font-weight: 100 !important;
+}
+.light {
+    font-weight: 300 !important;
+}
+.normal {
+    font-weight: 500 !important;
+}
+.TEXT {
+    text-transform: uppercase !important;
+}
+.text {
+    text-transform: lowercase !important;
+}
+.Text {
+    text-transform: capitalize !important;
+}
+.clickable {
+    cursor: pointer;
+}
+.unclickable {
+    cursor: default;
+}
+.t_e_x_t {
+    letter-spacing: 2px;
+}
+.paddingThis, div {
+    padding: 4px 20px;
+}
+.borderThis {
+    border: 1px solid #ddd;
+}
+.borderRadius {
+    border-radius: 4px;
+}
+.shadowThis {
+    box-shadow: 0 0 10px -1px rgba(0,0,0,0.3);
+}
+.centerContent {
+    text-align: center !important;
+}
+.notBlockThis {
+    display: inline;
+}
+.centerThis {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.gray {
+    background: #ddd;
+}

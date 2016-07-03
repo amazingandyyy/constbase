@@ -1,0 +1,37 @@
+@import "variables";
+
+.constbase {
+    font-family: $cb-sans;
+    color: $cb-black;
+    font-size: 130%;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        line-height: 1.2em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+.constbase.light {
+    font-weight: 300;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        line-height: 1.2em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+}
+
+.wrapper {
+    padding: 10px !important;
+}
