@@ -1,0 +1,21 @@
+{
+  "name": "constbase",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Amazingandyyy"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/amazingandyyy/constbase",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.2"
+  }
+}
