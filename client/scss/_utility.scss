@@ -1,73 +1,171 @@
 @import "variables";
-.bold {
-    font-weight: 600 !important;
-}
-.BOLD {
-    font-weight: 900 !important;
-}
-.LIGHT {
-    font-weight: 100 !important;
-}
-.light {
-    font-weight: 300 !important;
-}
-.normal {
-    font-weight: 500 !important;
-}
-.TEXT {
-    text-transform: uppercase !important;
-}
-.text {
-    text-transform: lowercase !important;
-}
-.Text {
-    text-transform: capitalize !important;
-}
-.clickable {
-    cursor: pointer;
-}
-.unclickable {
-    cursor: default;
-}
-.t_e_x_t {
-    letter-spacing: 2px;
-}
-.paddingThis, div {
-    padding: 4px 20px;
-}
-.borderThis {
-    border: 1px solid #ddd;
-}
-.borderRadius {
-    border-radius: 4px;
-}
-.shadowThis {
-    box-shadow: 0 0 10px -1px rgba(0,0,0,0.3);
-}
-.centerContent, .verticalAlign {
-    text-align: center !important;
-    display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	-webkit-box-align: center;
-	align-items: center;
-    div {
-        margin: auto;
+.constbase {
+    hr {
+        margin-top: 3rem;
+        margin-bottom: 3.5rem;
+        border-width: 0;
+        border-top: 1px solid #E1E1E1;
     }
-}
-.notBlockThis {
-    display: inline;
-}
-.centerThis {
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-.gray {
-    background: #ddd;
-}
-.white {
-    color: white;
+    // utility user interaction
+    .clickable {
+        cursor: pointer;
+    }
+    .unclickable {
+        cursor: default;
+    }
+    // utility text
+    .LARGE {
+        font-size: 400%;
+        margin: 0 !important;
+    }
+    .Bold,
+    .Strong,
+    .bold,
+    .strong {
+        font-weight: 600 !important;
+    }
+    .BOLD,
+    .STRONG {
+        font-weight: 900 !important;
+    }
+    .LIGHT {
+        font-weight: 100 !important;
+    }
+    .Light,
+    .light {
+        font-weight: 300 !important;
+    }
+    .normal {
+        font-weight: 500 !important;
+    }
+    .TEXT {
+        text-transform: uppercase !important;
+        letter-spacing: -1px;
+    }
+    .text {
+        text-transform: lowercase !important;
+    }
+    .Text {
+        text-transform: capitalize !important;
+    }
+    .TITLE {
+        font-size: 4em;
+    }
+    .Title {
+        font-size: 2.5em;
+    }
+    .T_E_X_T,
+    .t_e_x_t {
+        letter-spacing: 1px;
+    }
+    .T__E__X__T,
+    .t__e__x__t {
+        letter-spacing: 2px;
+    }
+    .text-white {
+        color: white;
+    }
+    .justified,
+    .justify,
+    .text-justify {
+        text-align: justify;
+    }
+    .text-responsive {
+        font-size: 100% !important;
+    }
+    // utility box
+    .padding {
+        padding: 4px 20px;
+    }
+    .bordered {
+        border: 1px solid #ddd;
+    }
+    .rounded {
+        border-radius: 4px;
+    }
+    .shadowed {
+        box-shadow: 0 0 10px -1px rgba(0,0,0,0.3);
+    }
+    .inverse,
+    .reverse {
+        background: #333;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            color: white !important;
+        }
+    }
+    .full-scream {
+        height: 91vh;
+    }
+    .half-scream {
+        height: 70vh;
+    }
+    // utility center
+    .horizontal-center,
+    .text-center {
+        text-align: center !important;
+    }
+    .vertical-center {
+        display: flex;
+        align-items: center;
+    }
+    .all-center,
+    .center-content {
+        text-align: center !important;
+        display: flex;
+        align-items: center;
+        div {
+            padding: 0;
+            margin: auto;
+        }
+    }
+    .noblocked {
+        display: inline;
+    }
+    // .center {
+    //     margin-left: auto !important;
+    //     margin-right: auto !important;
+    // }
+    .grayed {
+        background: #ddd;
+    }
+    /* Larger than mobile */
+    @media (min-width: 400px) {}
+    /* Larger than phablet (also point when grid becomes active) */
+    @media (min-width: 550px) {}
+    /* Larger than tablet */
+    @media (min-width: 750px) {
+        .half-scream {
+            height: 70vh;
+        }
+        .text-responsive {
+            font-size: 110% !important;
+        }
+    }
+    /* Larger than desktop */
+    @media (min-width: 1000px) {
+        .half-scream {
+            height: 80vh;
+        }
+        .text-responsive {
+            font-size: 130% !important;
+        }
+    }
+    /* Larger than Desktop HD */
+    @media (min-width: 1200px) {}
+    /* Smaller than mobile */
+    @media (max-width: 400px) {}
+    /* Smaller than phablet (also point when grid becomes active) */
+    @media (max-width: 550px) {}
+    /* Smaller than tablet */
+    @media (max-width: 750px) {}
+    /* Smaller than desktop */
+    @media (max-width: 1000px) {}
+    /* Smaller than Desktop HD */
+    @media (max-width: 1200px) {}
 }
